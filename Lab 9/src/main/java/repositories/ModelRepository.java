@@ -2,6 +2,9 @@ package repositories;
 
 import models.Model;
 
+/**
+ * ModelRepository interface for repository classes
+ */
 public interface ModelRepository {
     void create(Model object);
 

@@ -6,6 +6,10 @@ import models.Model;
 
 import javax.persistence.TypedQuery;
 
+/**
+ * DirectorRepository class for directors
+ * Implements ModelRepository interface
+ */
 public class DirectorRepository implements ModelRepository {
     @Override
     public void create(Model object) {
@@ -24,7 +28,7 @@ public class DirectorRepository implements ModelRepository {
     @Override
     public Model findByName(String name) {
         var entityManager = EntityManager.INSTANCE.getEntityManager();
-        TypedQuery<Directors> query = entityManager.createQuery("SELECT obj FROM Movie obj WHERE obj.title = :name", Directors.class);
+        TypedQuery<Directors> query = entityManager.createQuery("SELECT director FROM directors director WHERE director.name = :name", Directors.class);
         query.setParameter("name", name);
         return query.getSingleResult();
     }
