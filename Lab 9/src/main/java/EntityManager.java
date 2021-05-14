@@ -1,6 +1,9 @@
 import java.util.Objects;
 import javax.persistence.*;
 
+/**
+ * Singleton class responsible with the management of an EntityManagerFactory object
+ */
 public class EntityManager {
     INSTANCE;
 

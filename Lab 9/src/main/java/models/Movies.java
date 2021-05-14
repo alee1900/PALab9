@@ -12,6 +12,9 @@ import java.util.UUID;
 
 import static java.lang.Integer.valueOf;
 
+/**
+ * Movies class for movies DB
+ */
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = true)

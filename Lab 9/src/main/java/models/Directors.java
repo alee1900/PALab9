@@ -12,6 +12,9 @@ import java.util.UUID;
 
 import static java.lang.Integer.valueOf;
 
+/**
+ * Directors class for directors DB
+ */
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = true)
